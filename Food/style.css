@@ -1,0 +1,129 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+	background-color: #fff;
+}
+.container{
+	width: 1500px;
+	margin: 0 auto;
+}
+.nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	flex-wrap: wrap;
+}
+.list{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-grow: 5;
+	list-style-type: none;
+}
+.item{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.item :last-child{
+	display: flex;
+	flex-grow: 1;
+	justify-content: flex-end;
+}
+.item a{
+	text-decoration: none;
+	width: 50px;
+	height: 50px;
+	color: black;
+}
+/* Hero */
+.hero{
+	background-image: url(../Food/img/Image\ 4.png);
+	background-position: right center;
+	background-repeat: no-repeat;
+}
+h4{
+	color: #FF9401;
+}
+.title{
+	color: #232323;
+	font-size: 80px;
+	font-family: Gilroy;
+	font-weight: 700;
+	line-height: 108px;
+}
+.info{
+	color: #3F3232;
+	font-size: 20px;
+	font-family: Circular Std;
+	font-weight: 450;
+	line-height: 160%;
+}
+.btn{
+	width: 243px;
+	height: 62px;
+	flex-shrink: 0;
+	border-radius: 31px;
+	background: #FF9401;
+}
+.icon{
+	display: flex;
+	margin-left: 300px;
+	padding: 10px;
+}
+.wrapper{
+	background-image: url(../Food/img/Image.png);
+	background-position: left center;
+	background-repeat: no-repeat;
+}
+.text{
+	padding: 50px;
+	position:auto ;
+	margin-left: 600px;
+}
+.work{
+	background-image: url(../Food/img/2.png),url(../Food/img/3.png);
+	background-position: left bottom 100%, right bottom 100%;
+	background-repeat: no-repeat;
+}
+.box{
+	padding: 70px;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+}
+.slider{
+	background-image: url(../Food/img/1.png);
+	background-position: right bottom 350px;
+	background-repeat: no-repeat;
+}
+.title1{
+	align-items: center;text-align: center;
+}
+.btn1{
+	width: 243px;
+	height: 62px;
+	flex-shrink: 0;
+	border-radius: 31px;
+	background: #FF9401;
+	margin-left: 540px;
+}
+/* Footer */
+.footer{
+	background-image: url(../Food/img/Image.png);
+	background-position: right bottom 240px;
+	background-repeat: no-repeat;
+}
+.arrow{
+	position: relative;
+	bottom: 70px;
+	margin-left: 350px;
+}
