@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+.form{
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    border: 2px solid gray;
+    border-radius: 50px;
+    background-color: green;
+}
+.email{
+    width: 180px;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: #fff;
+}
+.number{
+    width: 180px;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: #fff;
+    text-rendering: optimizeSpeed;
+}
+.btn{
+    width: 50px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: blue;
+}

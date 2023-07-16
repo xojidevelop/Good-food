@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>test</title>
+  </head>
+  <body>
+    <p><a href="#">link</a></p>
+    <iframe id="iframe"></iframe>
+    <script>
+      // Content script is loaded into already existing iframe.
+      const a = document.createElement("a");
+      a.href = "#";
+      a.textContent = "link";
+      setTimeout(() => {
+        iframe.contentWindow.document.body.append(a);
+      }, 0);
+
+      // Content script is also loaded into immediately appended iframe.
+      const iframe2 = document.createElement("iframe");
+      const a2 = a.cloneNode(true);
+      document.body.append(iframe2);
+      setTimeout(() => {
+        iframe2.contentWindow.document.body.append(a2);
+      }, 100);
+
+      // But inserting a blank iframe after page load triggers this bug.
+      // Note the 1 second delay.
+      const iframe3 = document.createElement("iframe");
+      const a3 = a.cloneNode(true);
+      setTimeout(() => {
+        document.body.append(iframe3);
+        setTimeout(() => {
+          iframe3.contentWindow.document.body.append(a3);
+        }, 0);
+      }, 1000);
+
+      // But inserting a NON-blank iframe after page load is fine.
+      const iframe4 = document.createElement("iframe");
+      iframe4.src = "iframe.html";
+      setTimeout(() => {
+        document.body.append(iframe4);
+      }, 1000);
+    </script>
+    <script type="module" src="./content.js"></script>
+  </body>
+</html>

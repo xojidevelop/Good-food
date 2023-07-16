@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(45deg , red, blue);
+    font-family: sans-serif;
+}
+
+ul{
+    list-style-type: none;
+    border: solid 3px #000;
+}
+
+li{
+    display: flex;
+    flex-direction: column;
+    border: solid 3px crimson;
+    margin-top: 5px;
+    padding: 5px;
+    background-color: #fff;
+}

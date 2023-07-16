@@ -1,0 +1,32 @@
+
+html {
+  font-family: system-ui, sans-serif;
+}
+body {
+  margin: 1em;
+}
+input {
+  font: inherit;
+}
+h2 {
+  margin-top: 3em;
+  word-break: break-word;
+  font-size: 1.3em;
+}
+table {
+  border-collapse: collapse;
+}
+tr:nth-child(odd) {
+  background-color: #eee;
+}
+th,
+td {
+  border: 1px solid;
+  vertical-align: top;
+  padding: 0.5em;
+  text-align: left;
+}
+img {
+  max-width: 300px;
+  max-height: 300px;
+}

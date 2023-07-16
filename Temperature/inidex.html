@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class=":root">
+        <div class="t">
+            <div class="t__inner">
+                <div class="t__value">
+                    <span class="t__digit" data-temp>-</span><span class="t__digit" data-temp>-</span><span class="t__degree">°</span>
+                </div>
+                <button class="t__drag" type="button" data-drag>
+                    <span class="t__sr" data-temp-sr>--</span>
+                </button>
+                <svg class="t__arrows" width="256px" height="256px" viewBox="0 0 256 256">
+                    <g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity="0.2">
+                        <polyline points="227.893 117.393 238.499 128 249.107 117.392"/>
+                        <polyline points="5.393 117.393 16 128 26.608 117.392"/>
+                        <path d="M16,128a111.25,111.25,0,0,1,222.5,0"/>
+                    </g>
+                </svg>
+                <span class="t__units">
+                    <button class="t__unit" type="button" value="f" aria-label="Fahrenheit" data-scale>F</button>
+                    <button class="t__unit" type="button" value="c" aria-label="Celsius" data-scale>C</button>
+                </span>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>
